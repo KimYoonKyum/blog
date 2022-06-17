@@ -25,7 +25,6 @@ const InfoPage: FunctionComponent<InfoPageProps> = function ({
   return (
     <div>
       <Global styles={globalStyle} />
-      <div css={TextStyle}>{title}</div>
       <Text1 disable={true}>{description}</Text1>
       <Text2 disable={true}>{author}</Text2>
       {title} {description} {author}
@@ -55,11 +54,6 @@ const globalStyle = css`
 
     font-size: 20px;
   }
-`
-const TextStyle = css`
-  font-size: 18px;
-  font-weight: 700;
-  color: gray;
 `
 
 const Text1 = styled.div<{ disable: boolean }>`
