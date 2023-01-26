@@ -1,6 +1,6 @@
-import React, {FunctionComponent, ReactNode} from 'react'
+import React, { FunctionComponent, ReactNode } from 'react'
 import styled from '@emotion/styled'
-import {Link} from "gatsby";
+import { Link } from 'gatsby'
 
 export type CategoryListProps = {
   selectedCategory: string
@@ -9,13 +9,13 @@ export type CategoryListProps = {
   }
 }
 type CategoryItemProps = {
-  active: boolean;
+  active: boolean
 }
 
 type GatsbyLinkProps = {
-  children: ReactNode;
-  className?: string;
-  to: string;
+  children: ReactNode
+  className?: string
+  to: string
 } & CategoryItemProps
 
 const CategoryListWrapper = styled.div`
@@ -23,8 +23,15 @@ const CategoryListWrapper = styled.div`
   flex-wrap: wrap;
   width: 768px;
   margin: 100px auto 0;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 20px;
+  }
 `
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
   <Link {...props} />
 ))<CategoryItemProps>`
@@ -37,12 +44,16 @@ const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
   &:last-of-type {
     margin-right: 0;
   }
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
 `
 
 const CategoryList: FunctionComponent<CategoryListProps> = function ({
-                                                                       selectedCategory,
-                                                                       categoryList,
-                                                                     }) {
+  selectedCategory,
+  categoryList,
+}) {
   return (
     <CategoryListWrapper>
       {Object.entries(categoryList).map(([name, count]) => (
