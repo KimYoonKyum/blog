@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `YK's Dev blog`,
+    description: `개발하면서 생기는 일들을 기록한 블로그 입니다.`,
+    author: `Bamboo`,
+    siteUrl: 'https://bamboo.github.io/',
   },
   plugins: [
     {
@@ -78,6 +79,12 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }],
       },
     },
   ],
