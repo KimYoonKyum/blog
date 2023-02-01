@@ -3,7 +3,7 @@ module.exports = {
     title: `YK's Dev blog`,
     description: `개발하면서 생기는 일들을 기록한 블로그 입니다.`,
     author: `Bamboo`,
-    siteUrl: 'https://bamboo.github.io/',
+    siteUrl: 'https://kimyoonkyum.github.io/blog',
   },
   plugins: [
     {
