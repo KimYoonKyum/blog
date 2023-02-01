@@ -49,7 +49,6 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
   //   search.replace('?', ''),
   // )
   const parsed: { [key: string]: any } = { category: 'All' }
-
   const selectedCategory: string =
     typeof parsed.category !== 'string' || !parsed.category
       ? 'All'
