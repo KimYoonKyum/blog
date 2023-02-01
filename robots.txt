@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://bamboo.github.io/sitemap-index.xml
-Host: https://bamboo.github.io
+Sitemap: https://kimyoonkyum.github.io/sitemap-index.xml
+Host: https://kimyoonkyum.github.io
