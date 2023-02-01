@@ -6,6 +6,7 @@ import { graphql } from 'gatsby'
 import { IGatsbyImageData } from 'gatsby-plugin-image'
 import { PostListItemType } from 'types/PostItem.types'
 // import * as queryString from 'querystring'
+import qs from 'qs'
 import Template from 'components/common/Template'
 
 type IndexPageProps = {
@@ -45,10 +46,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
     },
   },
 }) {
-  // const parsed: { [key: string]: any } = queryString.parse(
-  //   search.replace('?', ''),
-  // )
-  const parsed: { [key: string]: any } = { category: 'All' }
+  const parsed = qs.parse(search.replace('?', ''))
   const selectedCategory: string =
     typeof parsed.category !== 'string' || !parsed.category
       ? 'All'

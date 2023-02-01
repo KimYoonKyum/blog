@@ -10,6 +10,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/qs": "^6.9.7",
     "@types/react-helmet": "^6.1.6",
     "gatsby": "^4.17.2",
     "gatsby-plugin-emotion": "^7.16.0",
@@ -29,6 +30,7 @@
     "gatsby-transformer-sharp": "^4.19.0",
     "prismjs": "^1.28.0",
     "prop-types": "^15.8.1",
+    "qs": "^6.11.0",
     "query-string": "^8.1.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -57,7 +59,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \\'Write tests! -> <https://gatsby.dev/unit-testing\\>' && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"
   },
   "repository": {
     "type": "git",
