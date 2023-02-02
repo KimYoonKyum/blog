@@ -38,13 +38,13 @@ thumbnail: './redux-logo.png'
 ### 결과물
 - 일단 Typescript는 사용하지 않았고 CRA로만 만들어 봤다
 - npx create-react-app my-app --template redux
-- 기본 Counter 예제가 있었는데 실제로 서비스 하면서 배열을 다루는 일들이 많아 배열 추가 삭제 하는 것으로 해봄
+- 기본 Counter 예제가 있었는데 실제로 서비스 하면서 배열을 다루는 일들이 많아 배열 추가 삭제 하는 것으로 해봄 
   ![test_result](test_result.png)
 
 ### 최초 느낀 점
 - 확실히 mobx와 다르게 코드를 작성하는 방법들이 고정되어 있음. 이 틀 안에서 새로운 구조 짜는 것은 한번 생각해봐야 할 듯?
 그리고 사람들이 왜 대규모 인원들이 투입된 프로젝트에서 쓰라고 하는 지도 이해가 갔음. 또한 toolkit 이라는 
-redux 에서 배포한 코드 작성 방법이 있어서 편하게 개발 할 수 있을 듯.
+redux 에서 배포한 코드 작성 방법이 있어서 편하게 개발 할 수 있을 듯. 
 
 
 ## Source
