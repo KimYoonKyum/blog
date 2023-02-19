@@ -1,0 +1,225 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 4.25.4"/><meta data-react-helmet="true" name="description" content="들고다니면서 볼 리액트 핸드북"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1.0"/><meta data-react-helmet="true" http-equiv="Content-Type" content="text/html;charset=UTF-8"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="og:title" content="리액트 핸드북"/><meta data-react-helmet="true" property="og:description" content="들고다니면서 볼 리액트 핸드북"/><meta data-react-helmet="true" property="og:image" content="/static/d986eff1e3097c0086d7ac26d876fcb9/react_logo.png"/><meta data-react-helmet="true" property="og:url"/><meta data-react-helmet="true" property="og:site_name" content="리액트 핸드북"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title" content="리액트 핸드북"/><meta data-react-helmet="true" name="twitter:description" content="들고다니면서 볼 리액트 핸드북"/><meta data-react-helmet="true" name="twitter:image" content="/static/d986eff1e3097c0086d7ac26d876fcb9/react_logo.png"/><meta data-react-helmet="true" name="twitter:site" content="김윤겸"/><meta data-react-helmet="true" name="twitter:creator" content="김윤겸"/><style data-href="/blog/styles.0109ae7f897db2fecdd6.css" data-identity="gatsby-global-css">code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><title data-react-helmet="true">리액트 핸드북</title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion="css 13ku56z">.css-13ku56z{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:100%;}</style><main class="css-13ku56z e1oj83b30"><style data-emotion="css-global 1nopjb9">*{padding:0;margin:0;box-sizing:border-box;font-family:'Noto Sans KR';}html,body,#___gatsby{height:100%;}a,a:hover{color:inherit;-webkit-text-decoration:none;text-decoration:none;cursor:pointer;}</style><style data-emotion="css 16cz9yp">.css-16cz9yp{position:relative;width:100%;height:400px;}@media (max-width: 768px){.css-16cz9yp{height:300px;}}</style><div class="css-16cz9yp ewnd50x1"><style data-emotion="css 1bjn9yo">.css-1bjn9yo{z-index:-1;width:100%;height:400px;object-fit:cover;-webkit-filter:brightness(0.25);filter:brightness(0.25);}@media (max-width: 768px){.css-1bjn9yo{height:300px;}}</style><div data-gatsby-image-wrapper="" style="position:absolute" class="gatsby-image-wrapper gatsby-image-wrapper-constrained css-1bjn9yo ewnd50x0"><div style="max-width:1200px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;675&#x27; width=&#x27;1200&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div><img aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear" decoding="async" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABCElEQVQoz2NgIAAYGUgFTMzMMsZW3KISnAJCcmZ2LOwcxOljBFklKKes4uBlGpdtlVEub24vrW8GkmFiIsoEFUcvh8JGu7xau/x625waXf9oImwFm61k66bi5G2bU+1Q1OxS0eVQ1KRs567m7Ad2FiMeJ4M0i2sZaHqGeDZPdSxucSxu9umcq+kZImNkSUAzXFrO1MYgJN46o9yxqFnTM1jLM5g4P4M1cwmLKTt5a3iFavlHKdi4CiqqE2utgICArIyMnI6BkKi4iIiIirG5nJwcEdELdpixsXFZeUVYSEhkVKS9g4O9rU1OTg4XFxfcXQQAKysrv4AANzc3JycXJxcXBycnVjcDAL5gLjCvXR15AAAAAElFTkSuQmCC" alt=""/><picture><source type="image/webp" data-srcset="/static/d986eff1e3097c0086d7ac26d876fcb9/b3177/react_logo.webp 300w,/static/d986eff1e3097c0086d7ac26d876fcb9/ea367/react_logo.webp 600w,/static/d986eff1e3097c0086d7ac26d876fcb9/8ab23/react_logo.webp 1200w" sizes="(min-width: 1200px) 1200px, 100vw"/><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 1200px) 1200px, 100vw" decoding="async" loading="lazy" data-src="/static/d986eff1e3097c0086d7ac26d876fcb9/2ae51/react_logo.png" data-srcset="/static/d986eff1e3097c0086d7ac26d876fcb9/4b853/react_logo.png 300w,/static/d986eff1e3097c0086d7ac26d876fcb9/1886e/react_logo.png 600w,/static/d986eff1e3097c0086d7ac26d876fcb9/2ae51/react_logo.png 1200w" alt="thumbnail"/></picture><noscript><picture><source type="image/webp" srcSet="/static/d986eff1e3097c0086d7ac26d876fcb9/b3177/react_logo.webp 300w,/static/d986eff1e3097c0086d7ac26d876fcb9/ea367/react_logo.webp 600w,/static/d986eff1e3097c0086d7ac26d876fcb9/8ab23/react_logo.webp 1200w" sizes="(min-width: 1200px) 1200px, 100vw"/><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 1200px) 1200px, 100vw" decoding="async" loading="lazy" src="/static/d986eff1e3097c0086d7ac26d876fcb9/2ae51/react_logo.png" srcSet="/static/d986eff1e3097c0086d7ac26d876fcb9/4b853/react_logo.png 300w,/static/d986eff1e3097c0086d7ac26d876fcb9/1886e/react_logo.png 600w,/static/d986eff1e3097c0086d7ac26d876fcb9/2ae51/react_logo.png 1200w" alt="thumbnail"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script></div><style data-emotion="css m1156n">.css-m1156n{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:768px;height:100%;margin:0 auto;padding:60px 0;color:#ffffff;}@media (max-width: 768px){.css-m1156n{width:100%;padding:40px 20px;}}</style><div class="css-m1156n e1st1jau3"><style data-emotion="css gywgo7">.css-gywgo7{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#ffffff;color:#000000;font-size:22px;cursor:pointer;box-shadow:0 0 10px rgba(0, 0, 0, 0.3);}@media (max-width: 768px){.css-gywgo7{width:30px;height:30px;font-size:18px;}}</style><div class="css-gywgo7 e1st1jau2"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-left" class="svg-inline--fa fa-arrow-left " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path></svg></div><style data-emotion="css gn4qtp">.css-gn4qtp{display:-webkit-box;overflow:hidden;overflow-wrap:break-word;margin-top:auto;text-overflow:ellipsis;white-space:normal;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-size:45px;font-weight:800;}@media (max-width: 768px){.css-gn4qtp{font-size:30px;}}</style><div class="css-gn4qtp e1st1jau1">리액트 핸드북</div><style data-emotion="css 3gcnt2">.css-3gcnt2{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:10px;font-size:18px;font-weight:700;}@media (max-width: 768px){.css-3gcnt2{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;font-size:15px;font-weight:400;}}</style><div class="css-3gcnt2 e1st1jau0"><div>React</div><div>2023.02.19.</div></div></div></div><style data-emotion="css uo146q">.css-uo146q{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:768px;margin:0 auto;padding:100px 0;word-break:break-all;line-height:1.8;font-size:16px;font-weight:400;}.css-uo146q p{padding:3px 0;}.css-uo146q h1,.css-uo146q h2,.css-uo146q h3{font-weight:800;margin-bottom:30px;}.css-uo146q *+h1,.css-uo146q *+h2,.css-uo146q *+h3{margin-top:80px;}.css-uo146q hr+h1,.css-uo146q hr+h2,.css-uo146q hr+h3{margin-top:0;}.css-uo146q h1{font-size:30px;}.css-uo146q h2{font-size:25px;}.css-uo146q h3{font-size:20px;}.css-uo146q blockquote{margin:30px 0;padding:5px 15px;border-left:2px solid #000000;font-weight:800;}.css-uo146q ol,.css-uo146q ul{margin-left:20px;padding:30px 0;}.css-uo146q hr{border:1px solid #000000;margin:100px 0;}.css-uo146q a{color:#4263eb;-webkit-text-decoration:underline;text-decoration:underline;}.css-uo146q pre[class*='language-']{margin:30px 0;padding:15px;font-size:15px;}.css-uo146q pre[class*='language-']::-webkit-scrollbar-thumb{background:rgba(255, 255, 255, 0.5);border-radius:3px;}.css-uo146q code[class*='language-'],.css-uo146q pre[class*='language-']{tab-size:2;}@media (max-width: 768px){.css-uo146q{width:100%;padding:80px 20px;line-height:1.6;font-size:14px;}.css-uo146q h1{font-size:23px;}.css-uo146q h2{font-size:20px;}.css-uo146q h3{font-size:17px;}.css-uo146q img{width:100%;}.css-uo146q hr{margin:50px 0;}}</style><div class="css-uo146q e1nm3yhc0"><h3>React</h3>
+<h1>React를 실행하기 위해 필요한 것들</h1>
+<ul>
+<li>nodejs
+<ul>
+<li>구글의 v8엔진 기반 자바스크립트 런타임 환경(실행 가능하게 해주는 것을 런타임 환경)</li>
+<li>nodejs를 통해서 패키지를 다운받고 관리할 수 있다</li>
+</ul>
+</li>
+<li>webpack
+<ul>
+<li>자바스크립트 모듈 번들러. 웹앱 개발에 필요한 html,css, js 등 하나 또는 여러개의 파일로 병합 및 압축해주는 역할</li>
+</ul>
+</li>
+<li>babel
+<ul>
+<li>es6 이상의 자바스크립트 코드나 jsx, typescript 코드를 브라우저가 읽을 수 있는 자바스크립트 코드로 변환해주는 것 트랜스파일러라고 부른다.</li>
+</ul>
+</li>
+<li>polyfill
+<ul>
+<li>트랜스 파일러로 변환이 불가능한 코드를 직접 구현한 것을 말한다.</li>
+</ul>
+</li>
+<li>npm vs vs npx vs yarn
+<ul>
+<li>npm과 yarn의 차이는 패키지 설치 프로세스를 처리하는 방식인데 npm은 패키지를 한번에 하나씩 순차적으로 설치하고 yarn은 여러패키지를 병렬적으로 설치한다 그래서 yarn이 더 속도가 빠르다고한다. 또한 yarn은 lock 파일을 통해 패키지 버전 잠금을 지원해서 어느 환경이던 항상 동일한 패키지를 지원한다.(npm도 package-lock.json이 있긴하다.)npx는 패키지를 실행 시키는 도구</li>
+</ul>
+</li>
+<li>package.json
+<ul>
+<li>패키지 의존성 정보 적어둔 파일</li>
+</ul>
+</li>
+<li>npm 버전의 의미: {메이저}.{마이너}.{패치}
+<ul>
+<li>메이저: api 호환성 깨질 정도 버전</li>
+<li>마이너: 하위 버전의 호환성을 지키는 버전</li>
+<li>패치: 하위 호환성 유지하면서 버그수정</li>
+<li>~ : 현재 지정한 버전 마지막 자리 내에서만 자동 업데이트</li>
+<li>^ : 마이너 버전과 패치 버전의 호환성을 지키는 수준내에서의 업데이트</li>
+</ul>
+</li>
+</ul>
+<h1>React</h1>
+<ul>
+<li>
+<p>사용자 인터페이스를 만들기 위한 자바스크립트 라이브러리</p>
+</li>
+<li>
+<p>jsx: 자바스크립트를 확장한 문법, html 코드를 작성하듯이 사용가능하다. 바벨을 통해 트랜스파일되서 자바스크립트 코드로 변환된다. 공식적인 자바스크립트 문법은 아니다. xss 공격을 방지</p>
+</li>
+<li>
+<p>엘리먼트</p>
+<ul>
+<li>리액트 앱의 가장 작은 단위이고, 일반 객체이다.</li>
+<li>리액트 dom 은 리액트 엘리먼트와 일치하도록 dom을 업데이트한다.</li>
+<li>엘리먼트는 불변객체이다. 한번 생성한후 변경되지 않고, 업데이트 하려면 렌더를 새로 해야한다.</li>
+</ul>
+</li>
+<li>
+<p>컴포넌트</p>
+<ul>
+<li>props라는 파라미터를 받고, 화면에 어떻게 표시되는지 나타내는 리액트 엘리먼트 반환</li>
+<li>함수형 컴포넌트, 클래스형 컴포넌트가 있다.</li>
+<li>리액트 컴포넌트는 자신의 props를 다룰떄 반드시 순수함수 처럼 동작해야한다.(동일한 입력값에는 동일한 결과가 나오게)</li>
+</ul>
+</li>
+<li>
+<p>함수형 컴포넌트 vs 클래스형 컴포넌트</p>
+<ul>
+<li>클래스는 Component 객체를 상속받아 구현하고 render 함수를 꼭 오버라이딩 해줘야한다.</li>
+<li>state를 가질수 있고 라이프 사이클을 각각 구현할 수 있다.</li>
+<li>함수형은 state와 render 함수를 구현하지 않아도 되고</li>
+<li>hook을 사용하여 상태 관리를 할 수 있다.</li>
+<li>현재는 리액트 공식문서에서 함수형+훅 사용을 권장하고있다.</li>
+</ul>
+</li>
+<li>
+<p>state &#x26; props</p>
+<ul>
+<li>state는 컴포넌트 자기 자신이 가지고 있는 값.</li>
+<li>props는 부모 컴포넌트가 자식 컴포넌트에 데이터를 전달할때 사용. 읽기 전용</li>
+</ul>
+</li>
+<li>
+<p>클래스형 컴포넌트에서는 state를 setState를 통하지 않고 값을 바꾸면 렌더가 안된다.</p>
+<ul>
+<li>컴포넌트는 자신의 state를 자식에게 props로 전달 가능하다.</li>
+<li>이것을 하향식 또는 단방향식 데이터 흐름이라고 한다.</li>
+</ul>
+</li>
+<li>
+<p>리액트에서는 반드시 preventDefault를 명시적으로 호출해야한다.</p>
+</li>
+<li>
+<p>key: 엘리먼트 식별 할 수 있도록 엘리먼트에 고유성을 부여하는 것. 엘리먼트 형제 사이에서만 고유하면된다.</p>
+</li>
+<li>
+<p>제어컴포넌트 vs 비제어 컴포넌트</p>
+<ul>
+<li>리액트에 의해 값이  제어되는 입력폼 엘리먼트를 제어 컴포넌트라고 한다</li>
+<li>오직 신뢰 가능한 단일 출처 값에 의해서만 입력값을 제어한다.</li>
+<li>비제어 컴포넌트는 dom에 접근하여 입력 값을 제어하는 것</li>
+</ul>
+</li>
+<li>
+<p>Context API</p>
+<ul>
+<li>props drilling을 하지않고 컴포넌트 트리 전체에 데이터를 제공할 수 있게해주는 것</li>
+<li>createContext 만들어진 객체는 Provider와 Consumer 컴포넌트를 가진다.</li>
+<li>Provider는 value를 받아 하위 컴포넌트에 전달하는 역할이고</li>
+<li>Consumer는 그 value들을 구독하는 컴포넌트이다.</li>
+</ul>
+</li>
+<li>
+<p>자바스크립트의 클래스 메소드는 기본적으로 바인딩 되어 있지 않아서 onclick 같은 인자에 바인딩 하지 않고 넘기면 undefined가 나온다</p>
+<ul>
+<li>이벤트핸들러에 함수를 전달할때 화살표함수를 쓰면 매번 새로운 콜백이 형성되기 때문에</li>
+<li>왠만하면 클래스로 작성해서 명시적으로 바인딩해준 함수를 넘겨주는것이 좋다</li>
+</ul>
+</li>
+<li>
+<p>리액트에서는 상속대신 합성을 통해서 컴포넌트를 재사용하는 것을 권장한다.</p>
+<ul>
+<li>아직 상속으로 작성하는 권장할만한 사례가 없다고한다.</li>
+</ul>
+</li>
+<li>
+<p>lazy 컴포넌트는 동적으로 import하는 함수를 인자로 가지고 suspense와 함께 쓰인다.</p>
+<ul>
+<li>import 해서컴포넌트를 가져올떄까지 suspense의 fallback으로 예비컨텐츠 보여준다.</li>
+</ul>
+</li>
+<li>
+<p>HOC 고차컴포넌트</p>
+<ul>
+<li>컴포넌트를 가져와서 새로운 컴포넌트로 반환하는 함수</li>
+<li>저는 고차컴포넌트 사용했던 경우는 특정 컴포넌트에서 mobx store 코드 사용못하도록 강제 예외처리 해주기 위해서 사용했습니다.</li>
+</ul>
+</li>
+<li>
+<p>성능최적화</p>
+<ul>
+<li>리액트에는 유용한 경고들이 많은데 개발환경에서는 이 경고들을 사용해서 유용하다.</li>
+<li>그렇지만 그만큼 앱을 느리게 만들기 떄문에 프로덕션 버젼 빌드해서 배포</li>
+<li>긴 목록같은 경우에는 react-window 같은 라이브러리 사용(주어진 시간에 현재 목록만 렌더링하여 dom 개수 많이 줄여줌)</li>
+</ul>
+</li>
+<li>
+<p>리액트 쓰면서 드는 생각</p>
+<ul>
+<li>가상 dom과 실제 dom 비교할때 diffing 알고리즘인 휴리스틱 알고리즘을 어떻게 o(n)복잡도로 만들었는지 신기하다</li>
+<li>휴리스틱 알고리즘중에 가정 첫번째인 두 개의 엘리먼트는 서로다른 두개의 트리를 만들어 낸다. 그래서 엘리먼트 하나가 바뀌면그 아래 엘리먼트도 싹 바뀐다.</li>
+</ul>
+</li>
+<li>
+<p>ref</p>
+<ul>
+<li>생성된 엘리먼트나 dom에 접근하는 방법</li>
+</ul>
+</li>
+<li>
+<p>리액트 생명주기</p>
+<ul>
+<li>
+<p>마운트시</p>
+<ul>
+<li>constructor -> getderivedStateProps -> render -> componentDidMount</li>
+</ul>
+</li>
+<li>
+<p>업데이트시</p>
+<ul>
+<li>getDerivedStateFromPros -> shouldComponentUpdate -> render -> getSnapshotBeforeUpdate ->componentDidUpdate</li>
+</ul>
+</li>
+<li>
+<p>언마운트시</p>
+<ul>
+<li>componentWillUnmount</li>
+</ul>
+</li>
+<li>
+<p>pure component</p>
+<ul>
+<li>상태값 변경을 체크해서 렌더링 할떄 깊은 비교가 아닌 얕은 비교를하는 컴포넌트</li>
+</ul>
+</li>
+<li>
+<p>리액트 hook</p>
+<ul>
+<li>함수형 컴포넌트에서 상태와 컴포넌트 생명주기를 관리할수 있는 함수
+<ul>
+<li>useState: 상태 선언하고 변경할 수 있는 함수를 반환하는 함수</li>
+<li>useEffect: 컴포넌트의 상태가 변경되었을때 사이드이펙트로 콜백함수를 실행하는 함수</li>
+<li>의존성 배열을 통해 특정상태가 변할때만 수행 가능하게도 할수 있다</li>
+<li>useContext: 가장 가까운 context를 반환하는 함수</li>
+<li>메모이제이션? 연산된 결과값을 저장해두고 동일한 입력값에 대해 결과값을 연산하지 않고 재사용할 수 있게하는 개념</li>
+<li>useCallback: 메모이제이션된 콜백 함수를 반환. 메모이제이션된 값이 변경될떄 까지 값을 저장해놓고 재사용 가능하게 할수 있다.</li>
+<li>useMemo: 메모이제이션된 값을 반환</li>
+<li>useLayoutEffect: 동기적으로 사이드이펙트를 실행할때 사용하는 함수</li>
+<li>리액트에서는 권장하지 않고 useEffect를 사용해보고 이상이 있을때 이것을 사용하라함</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>react18버전</p>
+<ul>
+<li>서버사이드렌더링 지원하고</li>
+<li>자동으로 배치해주는 기능 추가.
+<ul>
+<li>여러 상태가 업데이트 될때, 업데이트 될떄마다 렌더 하는게 아니라 묶어서 렌더링</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>참고 문서</h3>
+<ul>
+<li><a href="https://ko.reactjs.org/" target="_blank" rel="nofollow"><a href="https://ko.reactjs.org/" target="_blank" rel="nofollow">https://ko.reactjs.org/</a></a></li>
+</ul></div><style data-emotion="css hx9xpc">@media (max-width: 768px){.css-hx9xpc{padding:0 20px;}}</style><div class="css-hx9xpc e37rk6g0"></div><style data-emotion="css 9w9jmx">.css-9w9jmx{display:grid;place-items:center;margin-top:auto;padding:50px 0;font-size:15px;text-align:center;line-height:1.5;}@media (max-width: 768px){.css-9w9jmx{font-size:13px;}}</style><footer class="css-9w9jmx e1oae0v80">Thank You for Visiting My Blog, Have a Good Day 😆<br/>© 2022 KIM YOON KYUM, Powered By Gatsby.</footer></main></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/react-handbook/";window.___webpackCompilationHash="8586d4f68e0a7710e766";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-c9fa82aa5b1f9c65f078.js"],"app":["/app-e510f6d860b332370c73.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-50284ce7e157016eefee.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-6877e0c1310ceecf67a2.js"],"component---src-pages-info-tsx":["/component---src-pages-info-tsx-60ef45c57df0e6e47fa6.js"],"component---src-templates-post-template-tsx":["/component---src-templates-post-template-tsx-8fd77338dbddd1088039.js"]};/*]]>*/</script><script src="/blog/polyfill-c9fa82aa5b1f9c65f078.js" nomodule=""></script><script src="/blog/app-e510f6d860b332370c73.js" async=""></script><script src="/blog/framework-6e68b7056956344bfd29.js" async=""></script><script src="/blog/webpack-runtime-2cbb3c026f5a51c9a804.js" async=""></script></body></html>
