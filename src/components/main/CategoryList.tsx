@@ -1,6 +1,7 @@
 import React, { FunctionComponent, ReactNode } from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
+import { MenuItem, Select, SelectChangeEvent } from '@mui/material'
 
 export type CategoryListProps = {
   selectedCategory: string
@@ -54,17 +55,33 @@ const CategoryList: FunctionComponent<CategoryListProps> = function ({
   selectedCategory,
   categoryList,
 }) {
+  const [category, setCategory] = React.useState(selectedCategory)
+
+  const onChange = (event: SelectChangeEvent) => {
+    setCategory(event.target.value)
+  }
+
   return (
     <CategoryListWrapper>
-      {Object.entries(categoryList).map(([name, count]) => (
-        <CategoryItem
-          to={`?category=${name}`}
-          active={name === selectedCategory}
-          key={name}
-        >
-          #{name}({count})
-        </CategoryItem>
-      ))}
+      <Select
+        labelId="demo-simple-select-autowidth-label"
+        id="demo-simple-select-autowidth"
+        value={category}
+        onChange={onChange}
+        autoWidth
+        label="Tag"
+      >
+        {Object.entries(categoryList).map(([name, count]) => (
+          <MenuItem value={name} key={name}>
+            <CategoryItem
+              to={`?category=${name}`}
+              active={name === selectedCategory}
+            >
+              #{name}({count})
+            </CategoryItem>
+          </MenuItem>
+        ))}
+      </Select>
     </CategoryListWrapper>
   )
 }

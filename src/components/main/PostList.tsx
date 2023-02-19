@@ -45,20 +45,6 @@ const PostList: FunctionComponent<PostListProps> = function ({
   posts,
   selectedCategory,
 }) {
-  // const postListData = useMemo(
-  //   () =>
-  //     posts.filter(
-  //       ({
-  //         node: {
-  //           frontmatter: { categories },
-  //         },
-  //       }: PostListItemType) =>
-  //         selectedCategory !== 'All'
-  //           ? categories.includes(selectedCategory)
-  //           : true,
-  //     ),
-  //   [selectedCategory],
-  // )
   const { containerRef, postList }: useInfiniteScrollType = useInfiniteScroll(
     selectedCategory,
     posts,
