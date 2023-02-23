@@ -1,7 +1,7 @@
 ---
 date: '2023-02-14'
 title: 'Redux 체험기 - 2'
-categories: ['React', 'Redux', 'Redux-toolkit']
+categories: ['React', 'Redux', 'Redux-toolkit', 'study']
 summary: 'Redux를 쓰면서 꼭 알아야 하는 기본'
 thumbnail: './redux-logo.png'
 ---

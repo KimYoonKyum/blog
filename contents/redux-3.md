@@ -1,7 +1,7 @@
 ---
 date: '2023-02-23'
 title: 'Redux 체험기 - 3'
-categories: ['React', 'Redux', 'Redux-toolkit']
+categories: ['React', 'Redux', 'Redux-toolkit', 'study']
 summary: 'Redux 사용 시 비동기 동작 이해하기'
 thumbnail: './redux-logo.png'
 ---

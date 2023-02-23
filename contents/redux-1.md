@@ -1,7 +1,7 @@
 ---
 date: '2023-02-02'
 title: 'Redux 체험기 - 1'
-categories: ['React', 'Redux', 'Redux-toolkit']
+categories: ['React', 'Redux', 'Redux-toolkit', 'study']
 summary: 'Redux은 무엇이고 왜 쓰는 것일까? '
 thumbnail: './redux-logo.png'
 ---

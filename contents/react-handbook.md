@@ -1,7 +1,7 @@
 ---
 date: '2023-02-19'
 title: '리액트 핸드북'
-categories: ['React']
+categories: ['React', 'study']
 summary: '들고다니면서 볼 리액트 핸드북'
 thumbnail: './react_logo.png'
 ---

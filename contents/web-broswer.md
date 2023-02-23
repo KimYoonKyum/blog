@@ -1,7 +1,7 @@
 ---
 date: '2023-02-01'
 title: '웹브라우저 & HTML 정리'
-categories: ['Web', 'HTML', 'Browser']
+categories: ['Web', 'HTML', 'Browser', 'study']
 summary: '웹브라우저와 HTML 공부하면서 정리한 내용들'
 thumbnail: './web_browser.png'
 ---

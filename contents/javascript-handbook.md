@@ -1,7 +1,7 @@
 ---
 date: '2023-02-14'
 title: '자바스크립트 핸드북'
-categories: ['Javascript']
+categories: ['Javascript', 'study']
 summary: '들고다니면서 볼 자바스크립트 핸드북'
 thumbnail: './javascript.png'
 ---

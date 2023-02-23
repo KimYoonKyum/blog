@@ -1,7 +1,7 @@
 ---
 date: '2023-02-23'
 title: '오늘의 이슈'
-categories: ['Browser', 'DNS']
+categories: ['Browser', 'DNS', 'issue']
 summary: 'DNS 관련 이슈'
 thumbnail: './images/issue-logo.png'
 ---
