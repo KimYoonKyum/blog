@@ -4,8 +4,8 @@ import styled from '@emotion/styled'
 const Footer: FunctionComponent = function () {
   return (
     <FooterWrapper>
-      Thank You for Visiting My Blog, Have a Good Day 😆
-      <br />© 2022 KIM YOON KYUM, Powered By Gatsby.
+      제 블로그에 오신 분들 모두 환영 해요, 잘못 된 지식이 있으면 지적 부탁드립니다!
+      <br />© Powered By KIM YOON KYUM.
     </FooterWrapper>
   )
 }

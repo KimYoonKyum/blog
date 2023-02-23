@@ -37,6 +37,7 @@ const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
   <Link {...props} />
 ))<CategoryItemProps>`
   margin-right: 20px;
+  width: 100%;
   padding: 5px 0;
   font-size: 18px;
   font-weight: ${({ active }) => (active ? '800' : '400')};
