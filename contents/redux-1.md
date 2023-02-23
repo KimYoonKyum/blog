@@ -11,7 +11,7 @@ thumbnail: './redux-logo.png'
 - 자바스크립트 앱을 위한 상태 관리 라이브러리
 - React나 다른 뷰 라이브러리와 함께 쓸 수 있고, Redux 자체는 용량이 2kb 정도 밖에 안되지만, 다른 추가적인 애드온 들과 함께 사용할 수 있다.
 - 아래와 같은 상황에 유용한다고 한다.
-![useful-redux](useful_redux.png)
+![useful_redux](https://user-images.githubusercontent.com/21151247/220909048-7b355df0-2dc4-4511-95de-1961e657957f.png)
   - 많은 양의 상태관리가 필요 할 때
   - 여러 명의 개발자가 협업 할 때
   - 복잡한 로직의 상태들이 업데이트 되는 경우가 있을 때
