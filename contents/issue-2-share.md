@@ -1,7 +1,7 @@
 ---
 date: '2023-03-02'
 title: '오늘의 이슈'
-categories: ['Web API', 'Share']
+categories: ['Web API', 'Share', 'issue']
 summary: '공유하기 기능 관련 이슈'
 thumbnail: './images/issue-logo.png'
 ---
