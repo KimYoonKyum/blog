@@ -100,6 +100,12 @@ const MarkdownRenderer = styled.div`
     tab-size: 2;
   }
 
+  li {
+    img {
+      width: 100%;
+    }
+  }
+
   // Markdown Responsive Design
   @media (max-width: 768px) {
     width: 100%;
